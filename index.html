@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sahra Ebrahimmagham - Semiconductor Device Engineer and Researcher specializing in GaN HEMT compact modeling and advanced transistor technologies.">
-    <meta name="keywords" content="Sahra Ebrahimmagham, GaN HEMT, compact modeling, Verilog-A, semiconductor devices, field-plate, Amirkabir University">
+    <meta name="description" content="Sahra Ebrahimmagham - Semiconductor Device Engineer and Researcher specializing in GaN HEMT compact modeling, Verilog-A, and advanced transistor technologies.">
+    <meta name="keywords" content="Sahra Ebrahimmagham, GaN HEMT, compact modeling, Verilog-A, field-plate, semiconductor devices, Amirkabir University, imec">
     <meta name="author" content="Sahra Ebrahimmagham">
     <title>Sahra Ebrahimmagham | Semiconductor Device Engineer & Researcher</title>
     
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Sahra Ebrahimmagham | Semiconductor Device Engineer">
+    <meta property="og:description" content="Expert in physics-based compact modeling of GaN HEMTs and next-generation semiconductor devices.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://sahraebm.github.io/Sahra-Ebrahimmagham-site/">
+    <meta property="og:image" content="https://sahraebm.github.io/Sahra-Ebrahimmagham-site/profile.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sahra Ebrahimmagham",
+      "url": "https://sahraebm.github.io/Sahra-Ebrahimmagham-site/",
+      "image": "https://sahraebm.github.io/Sahra-Ebrahimmagham-site/profile.jpg",
+      "jobTitle": "Semiconductor Device Engineer & Researcher",
+      "description": "Researcher specializing in physics-based compact modeling of GaN HEMTs with gate field-plate structures, Verilog-A modeling, and wide-bandgap semiconductor technologies.",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Amirkabir University of Technology"
+      },
+      "sameAs": [
+        "https://github.com/SahraEbm",
+        "https://linkedin.com/in/sahraebm"
+      ],
+      "knowsAbout": ["GaN HEMT", "Compact Modeling", "Verilog-A", "Semiconductor Device Physics", "Field-Plate Structures"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "imec"
+      }
+    }
+    </script>
+
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+                        url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
         }
         .card-hover {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -22,6 +56,12 @@
         .card-hover:hover {
             transform: translateY(-12px);
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+        .cube {
+            transition: all 0.4s ease;
+        }
+        .cube:hover {
+            transform: scale(1.05) rotateY(8deg);
         }
     </style>
 </head>
@@ -48,7 +88,7 @@
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <header class="hero-bg min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-6 py-24">
             <div class="max-w-3xl">
@@ -70,7 +110,7 @@
         </div>
     </header>
 
-    <!-- Research Areas -->
+    <!-- Latest Advancements - Next Generation of Transistors -->
     <section id="research" class="py-24 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-12">
@@ -78,16 +118,46 @@
                 <h2 class="text-4xl font-semibold mt-3">The Next Generation of Transistors</h2>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Cards (same as before, slightly enhanced) -->
-                <div class="bg-zinc-800 rounded-3xl overflow-hidden card-hover">
-                    <div class="h-52 bg-gradient-to-br from-blue-900 to-zinc-800 flex items-center justify-center text-7xl">📦</div>
+            <!-- Three Cubes -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cube 1: GaN HEMT -->
+                <div class="cube bg-zinc-800 rounded-3xl overflow-hidden card-hover border border-zinc-700">
+                    <div class="h-56 bg-zinc-950 flex items-center justify-center p-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/GaN_Wurtzite_polyhedra.png/800px-GaN_Wurtzite_polyhedra.png" 
+                             alt="Gallium Nitride GaN HEMT Structure" 
+                             class="max-h-full object-contain">
+                    </div>
                     <div class="p-8">
-                        <h3 class="font-semibold text-xl mb-3">3D Stacked & CFET</h3>
-                        <p class="text-zinc-400">Continued scaling beyond FinFET limits.</p>
+                        <h3 class="font-semibold text-xl mb-3 text-white">Gallium Nitride (GaN) HEMT</h3>
+                        <p class="text-zinc-400 text-sm">High-electron-mobility transistors enabling high-frequency and high-power applications.</p>
                     </div>
                 </div>
-                <!-- Repeat similar cards for GAA, 2D Materials, GaN & Wide Bandgap -->
+
+                <!-- Cube 2: SiC MOSFET -->
+                <div class="cube bg-zinc-800 rounded-3xl overflow-hidden card-hover border border-zinc-700">
+                    <div class="h-56 bg-zinc-950 flex items-center justify-center p-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Silicon_carbide_crystal_structure.png/800px-Silicon_carbide_crystal_structure.png" 
+                             alt="Silicon Carbide SiC MOSFET Structure" 
+                             class="max-h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-semibold text-xl mb-3 text-white">Silicon Carbide (SiC) MOSFET</h3>
+                        <p class="text-zinc-400 text-sm">Superior high-voltage and high-temperature performance in power electronics.</p>
+                    </div>
+                </div>
+
+                <!-- Cube 3: Graphene & 2D Materials -->
+                <div class="cube bg-zinc-800 rounded-3xl overflow-hidden card-hover border border-zinc-700">
+                    <div class="h-56 bg-zinc-950 flex items-center justify-center p-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Graphene_structure.svg/800px-Graphene_structure.svg.png" 
+                             alt="Graphene and 2D Material Transistor" 
+                             class="max-h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-semibold text-xl mb-3 text-white">Graphene & 2D Materials</h3>
+                        <p class="text-zinc-400 text-sm">Ultra-thin materials enabling future high-speed and flexible electronics.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -108,7 +178,6 @@
                     </a>
                 </div>
 
-                <!-- Recent Updates -->
                 <div class="bg-zinc-900 rounded-3xl p-10">
                     <h3 class="font-semibold text-xl mb-8">Recent Updates</h3>
                     <div class="space-y-8 text-sm">
