@@ -3,60 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Sahra Ebrahimmagham</title>
+    <meta name="description" content="Sahra Ebrahimmagham - M.Sc. Electrical Engineering from Amirkabir University of Technology. Expert in GaN HEMT compact modeling and semiconductor device research.">
+    <title>About Sahra Ebrahimmagham | Semiconductor Researcher</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-    </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
 
-    <!-- Navigation (same as index) -->
+    <!-- Navigation (same as index.html) -->
     <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <span class="text-xl font-semibold text-white">Sahra Ebrahimmagham</span>
+                <span class="text-2xl font-semibold tracking-tight text-white">Sahra Ebrahimmagham</span>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
                 <a href="index.html" class="hover:text-blue-400">Home</a>
-                <a href="about.html" class="text-white font-medium">About</a>
+                <a href="about.html" class="text-white">About</a>
                 <a href="index.html#research" class="hover:text-blue-400">Research</a>
                 <a href="index.html#projects" class="hover:text-blue-400">Projects</a>
-                <a href="#" class="hover:text-blue-400">Publications</a>
             </div>
         </div>
     </nav>
 
-    <div class="pt-24 max-w-4xl mx-auto px-6 py-16">
-        <h1 class="text-5xl font-bold mb-10">About Me</h1>
-        
-        <div class="prose prose-invert prose-lg">
-            <p>Sahra Ebrahimmagham is a semiconductor device engineer and researcher specializing in compact modeling, GaN HEMT devices, and next-generation transistor architectures.</p>
+    <div class="pt-28 max-w-4xl mx-auto px-6 py-16">
+        <h1 class="text-5xl font-bold mb-12">About Me</h1>
+
+        <div class="prose prose-invert prose-lg max-w-none">
+            <p class="text-xl text-zinc-300">
+                I am a semiconductor device engineer and researcher with a strong focus on physics-based compact modeling and advanced transistor technologies.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-12 mb-6">Education</h3>
+            <p><strong>M.Sc. in Electrical Engineering</strong> — Amirkabir University of Technology</p>
+            <p class="text-zinc-400">GPA: 4.0/4.0</p>
             
-            <p>Her work focuses on bridging device physics with circuit-level simulation through physically informed Verilog-A models, enabling accurate prediction of device behavior in RF and power electronics applications.</p>
+            <p class="mt-6">
+                During my graduate studies, I served as a Teaching Assistant for three terms in <strong>VLSI Design</strong> and <strong>Solid-State Electronics</strong>. These roles deepened my expertise in semiconductor device physics, charge transport mechanisms, and circuit-level analysis.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-12 mb-6">Research Focus</h3>
+            <p>
+                My recent research centers on the <strong>physics-based compact modeling of GaN HEMTs with gate field-plate structures</strong>. I developed a charge-based compact model that extends the renowned EPFL GaN HEMT framework by incorporating field-plate electrostatics and access-region resistances.
+            </p>
+            <p class="mt-4">
+                This work has been submitted to <strong>IEEE Transactions on Electron Devices</strong> and is currently under review. The model has been rigorously validated against TCAD simulations and experimental measurements.
+            </p>
+            <p class="mt-4">
+                In parallel, I am developing a 2-D analytical model of AlGaN/GaN HEMTs with field-plate structures to provide deeper insights into device electrostatics and charge transport mechanisms.
+            </p>
+
+            <h3 class="text-2xl font-semibold mt-12 mb-6">Collaborations</h3>
+            <p>
+                I am actively collaborating with <strong>imec</strong> (Belgium) on advancing GaN device modeling, contributing to cutting-edge research in high-performance wide-bandgap semiconductors for RF and power applications.
+            </p>
         </div>
 
-        <div class="mt-16 grid md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Research Interests</h3>
-                <ul class="space-y-3 text-zinc-300">
-                    <li class="flex items-start gap-3"><span class="text-blue-400 mt-1">•</span> Physics-based Compact Modeling (Verilog-A, SPICE)</li>
-                    <li class="flex items-start gap-3"><span class="text-blue-400 mt-1">•</span> GaN High Electron Mobility Transistors (HEMTs)</li>
-                    <li class="flex items-start gap-3"><span class="text-blue-400 mt-1">•</span> Wide Bandgap Semiconductors</li>
-                    <li class="flex items-start gap-3"><span class="text-blue-400 mt-1">•</span> Gate-All-Around & 3D Architectures</li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Connect</h3>
-                <div class="flex gap-6">
-                    <a href="#" class="text-3xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-3xl hover:text-blue-400"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-3xl hover:text-blue-400"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
+        <div class="mt-16 flex flex-wrap gap-8">
+            <a href="https://github.com/SahraEbm" target="_blank" class="flex items-center gap-3 text-blue-400 hover:text-blue-300">
+                <i class="fab fa-github text-3xl"></i>
+                <span class="font-medium">GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/sahraebm" target="_blank" class="flex items-center gap-3 text-blue-400 hover:text-blue-300">
+                <i class="fab fa-linkedin text-3xl"></i>
+                <span class="font-medium">LinkedIn</span>
+            </a>
         </div>
     </div>
-
 </body>
 </html>
