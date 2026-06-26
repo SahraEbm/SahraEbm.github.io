@@ -1,26 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Research</title>
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Sahra Ebrahimmagham</title>
+    <meta name="description" content="Sahra Ebrahimmagham Research - Physics-based compact modeling of GaN HEMTs with field plates and advanced semiconductor devices.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .prose h3 { @apply text-2xl font-semibold mt-10 mb-6 text-white; }
+    </style>
 </head>
+<body class="bg-zinc-950 text-zinc-200">
 
-<body>
+    <!-- Navigation -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-semibold tracking-tight text-white">Sahra Ebrahimmagham</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="research.html" class="text-white font-medium">Research</a>
+                <a href="index.html#projects" class="hover:text-blue-400">Projects</a>
+            </div>
+        </div>
+    </nav>
 
-<header><h1>Research Interests</h1></header>
+    <!-- Research Vision -->
+    <section class="pt-28 pb-16 bg-gradient-to-b from-zinc-900 to-zinc-950 border-b border-blue-900">
+        <div class="max-w-5xl mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-10">Research Vision</h1>
+            
+            <div class="prose prose-invert prose-lg max-w-none text-zinc-300 space-y-8">
+                <p>
+                    My research focuses on advancing next-generation Gallium Nitride (GaN) High Electron Mobility Transistors (HEMTs) through the development of accurate, physics-based compact models for power electronics, RF circuits, and high-voltage semiconductor technologies.
+                </p>
+                <p>
+                    My objective is to bridge semiconductor device physics with circuit-level simulation by creating scalable compact models that accurately represent advanced GaN transistor architectures while remaining computationally efficient for SPICE and EDA tools.
+                </p>
+                <p>
+                    Working in collaboration with the EPFL HEMT Modeling Team, my research has contributed to the development of compact modeling methodologies for advanced field-plated GaN HEMTs, providing improved predictive capability for both device designers and circuit engineers.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<section class="container">
+    <!-- Research Areas -->
+    <section class="py-20 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="uppercase tracking-widest text-blue-400 text-sm">RESEARCH AREAS</span>
+                <h2 class="text-4xl font-semibold mt-3">Physics-Based Compact Modeling of GaN HEMTs</h2>
+            </div>
 
-<ul>
-<li>GaN HEMT device physics</li>
-<li>Compact transistor modeling</li>
-<li>Verilog-A behavioral modeling</li>
-<li>Wide-bandgap semiconductors</li>
-<li>RF & power electronics devices</li>
-<li>TCAD-to-SPICE modeling</li>
-</ul>
+            <div class="grid md:grid-cols-2 gap-10 mb-20">
+                <div class="bg-zinc-900 rounded-3xl p-10">
+                    <h3 class="text-2xl font-semibold mb-6">Research Focus</h3>
+                    <p class="text-zinc-300 leading-relaxed">
+                        My research combines semiconductor device physics with compact model development to accurately describe GaN HEMT behavior under DC, transient, RF, and power-switching operating conditions.
+                    </p>
+                </div>
 
-</section>
+                <div class="bg-zinc-900 rounded-3xl p-10">
+                    <h3 class="text-2xl font-semibold mb-6">Current Research Topics Include</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-zinc-300">
+                        <div>Surface-potential-based compact modeling</div>
+                        <div>Charge-based transistor modeling</div>
+                        <div>Electrostatic modeling</div>
+                        <div>Self-heating effects</div>
+                        <div>Charge trapping and current collapse</div>
+                        <div>Dynamic ON-resistance</div>
+                        <div>Temperature-dependent behavior</div>
+                        <div>Breakdown mechanisms</div>
+                        <div>High-frequency parasitic effects</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Section: Compact Modeling with Gate and Source Field Plates -->
+            <div class="bg-zinc-900 rounded-3xl p-12">
+                <span class="uppercase tracking-widest text-blue-400 text-sm">COMPACT MODELING</span>
+                <h2 class="text-4xl font-semibold mt-4 mb-8">Compact Modeling of GaN HEMTs with Gate and Source Field Plates</h2>
+                
+                <div class="prose prose-invert prose-lg text-zinc-300 space-y-8">
+                    <p>
+                        A major outcome of my research has been the development of a comprehensive physics-based compact model for GaN HEMTs incorporating both Gate Field Plates (GFP) and Source Field Plates (SFP). 
+                        The model captures the coupled electrostatic interactions between multiple field-plate structures and accurately predicts their influence on device performance.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold">The model includes the effects of</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-zinc-300">
+                        <div>Electric-field redistribution</div>
+                        <div>Surface potential modulation</div>
+                        <div>Charge transport</div>
+                        <div>Dynamic trapping and detrapping</div>
+                        <div>Capacitance variation</div>
+                        <div>Breakdown voltage enhancement</div>
+                        <div>Self-heating</div>
+                        <div>Temperature dependence</div>
+                        <div>Switching losses</div>
+                        <div>High-frequency operation</div>
+                    </div>
+                    
+                    <p class="pt-6 border-t border-zinc-700">
+                        By integrating both GFP and SFP effects into a unified compact modeling framework, this work provides an accurate and scalable solution for the simulation of advanced GaN power devices and RF transistors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            © 2026 Sahra Ebrahimmagham • Semiconductor Device Engineering & Modeling
+        </div>
+    </footer>
 
 </body>
 </html>
