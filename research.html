@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Sahra Ebrahimmagham</title>
-    <meta name="description" content="Sahra Ebrahimmagham Research - Physics-based compact modeling of GaN HEMTs with field plates and advanced semiconductor devices.">
+    <meta name="description" content="Explore Sahra Ebrahimmagham's research in GaN HEMT compact modeling and advanced semiconductor technologies.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
-        .prose h3 { @apply text-2xl font-semibold mt-10 mb-6 text-white; }
+        .research-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .research-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
@@ -31,96 +37,80 @@
         </div>
     </nav>
 
-    <!-- Research Vision -->
-    <section class="pt-28 pb-16 bg-gradient-to-b from-zinc-900 to-zinc-950 border-b border-blue-900">
-        <div class="max-w-5xl mx-auto px-6">
-            <h1 class="text-5xl font-bold mb-10">Research Vision</h1>
+    <div class="pt-28 pb-20 max-w-7xl mx-auto px-6">
+        <div class="mb-16 text-center">
+            <span class="uppercase tracking-widest text-blue-400 text-sm">EXPLORE THE RESEARCH</span>
+            <h1 class="text-5xl font-bold mt-4">Research Subsections</h1>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             
-            <div class="prose prose-invert prose-lg max-w-none text-zinc-300 space-y-8">
-                <p>
-                    My research focuses on advancing next-generation Gallium Nitride (GaN) High Electron Mobility Transistors (HEMTs) through the development of accurate, physics-based compact models for power electronics, RF circuits, and high-voltage semiconductor technologies.
-                </p>
-                <p>
-                    My objective is to bridge semiconductor device physics with circuit-level simulation by creating scalable compact models that accurately represent advanced GaN transistor architectures while remaining computationally efficient for SPICE and EDA tools.
-                </p>
-                <p>
-                    Working in collaboration with the EPFL HEMT Modeling Team, my research has contributed to the development of compact modeling methodologies for advanced field-plated GaN HEMTs, providing improved predictive capability for both device designers and circuit engineers.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Areas -->
-    <section class="py-20 bg-zinc-950">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="mb-12">
-                <span class="uppercase tracking-widest text-blue-400 text-sm">RESEARCH AREAS</span>
-                <h2 class="text-4xl font-semibold mt-3">Physics-Based Compact Modeling of GaN HEMTs</h2>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-10 mb-20">
-                <div class="bg-zinc-900 rounded-3xl p-10">
-                    <h3 class="text-2xl font-semibold mb-6">Research Focus</h3>
-                    <p class="text-zinc-300 leading-relaxed">
-                        My research combines semiconductor device physics with compact model development to accurately describe GaN HEMT behavior under DC, transient, RF, and power-switching operating conditions.
-                    </p>
+            <!-- 01 Research Vision -->
+            <a href="vision.html" class="research-card bg-zinc-900 rounded-3xl overflow-hidden block">
+                <div class="h-52 bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://a.storyblok.com/f/182663/1600x1072/f4620b2a17/asml-euv-manufacturing.png/m/3840x0/filters:quality(85)" 
+                         alt="Research Vision" class="w-full h-full object-cover">
                 </div>
-
-                <div class="bg-zinc-900 rounded-3xl p-10">
-                    <h3 class="text-2xl font-semibold mb-6">Current Research Topics Include</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-zinc-300">
-                        <div>Surface-potential-based compact modeling</div>
-                        <div>Charge-based transistor modeling</div>
-                        <div>Electrostatic modeling</div>
-                        <div>Self-heating effects</div>
-                        <div>Charge trapping and current collapse</div>
-                        <div>Dynamic ON-resistance</div>
-                        <div>Temperature-dependent behavior</div>
-                        <div>Breakdown mechanisms</div>
-                        <div>High-frequency parasitic effects</div>
-                    </div>
+                <div class="p-8">
+                    <div class="text-blue-400 text-xs font-mono mb-2">01</div>
+                    <h3 class="text-xl font-semibold mb-3">Research Vision</h3>
+                    <p class="text-zinc-400 text-sm">Research direction and collaboration context.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- New Section: Compact Modeling with Gate and Source Field Plates -->
-            <div class="bg-zinc-900 rounded-3xl p-12">
-                <span class="uppercase tracking-widest text-blue-400 text-sm">COMPACT MODELING</span>
-                <h2 class="text-4xl font-semibold mt-4 mb-8">Compact Modeling of GaN HEMTs with Gate and Source Field Plates</h2>
-                
-                <div class="prose prose-invert prose-lg text-zinc-300 space-y-8">
-                    <p>
-                        A major outcome of my research has been the development of a comprehensive physics-based compact model for GaN HEMTs incorporating both Gate Field Plates (GFP) and Source Field Plates (SFP). 
-                        The model captures the coupled electrostatic interactions between multiple field-plate structures and accurately predicts their influence on device performance.
-                    </p>
-                    
-                    <h3 class="text-2xl font-semibold">The model includes the effects of</h3>
-                    <div class="grid md:grid-cols-3 gap-6 text-zinc-300">
-                        <div>Electric-field redistribution</div>
-                        <div>Surface potential modulation</div>
-                        <div>Charge transport</div>
-                        <div>Dynamic trapping and detrapping</div>
-                        <div>Capacitance variation</div>
-                        <div>Breakdown voltage enhancement</div>
-                        <div>Self-heating</div>
-                        <div>Temperature dependence</div>
-                        <div>Switching losses</div>
-                        <div>High-frequency operation</div>
-                    </div>
-                    
-                    <p class="pt-6 border-t border-zinc-700">
-                        By integrating both GFP and SFP effects into a unified compact modeling framework, this work provides an accurate and scalable solution for the simulation of advanced GaN power devices and RF transistors.
-                    </p>
+            <!-- 02 Physics-Based Compact Modeling -->
+            <a href="focus.html" class="research-card bg-zinc-900 rounded-3xl overflow-hidden block">
+                <div class="h-52 bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://www.nasa.gov/wp-content/uploads/2023/03/51205771942-3869c2d30f-k.jpg?resize=2000,1333" 
+                         alt="Physics-Based Compact Modeling" class="w-full h-full object-cover">
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="p-8">
+                    <div class="text-blue-400 text-xs font-mono mb-2">02</div>
+                    <h3 class="text-xl font-semibold mb-3">Physics-Based Compact Modeling of GaN HEMTs</h3>
+                    <p class="text-zinc-400 text-sm">DC, transient, RF, and switching behavior.</p>
+                </div>
+            </a>
 
-    <!-- Footer -->
-    <footer class="bg-black py-12 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
-            © 2026 Sahra Ebrahimmagham • Semiconductor Device Engineering & Modeling
+            <!-- 03 Compact Modeling with Gate and Source Field Plates -->
+            <a href="compact-modeling.html" class="research-card bg-zinc-900 rounded-3xl overflow-hidden block">
+                <div class="h-52 bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://orbitskyline.com/wp-content/uploads/2024/09/about_oem.webp" 
+                         alt="Compact Modeling with Gate and Source Field Plates" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8">
+                    <div class="text-blue-400 text-xs font-mono mb-2">03</div>
+                    <h3 class="text-xl font-semibold mb-3">Compact Modeling of GaN HEMTs with Gate and Source Field Plates</h3>
+                    <p class="text-zinc-400 text-sm">Unified GFP and SFP model effects.</p>
+                </div>
+            </a>
+
+            <!-- 04 Universal Compact Modeling -->
+            <a href="universal-modeling.html" class="research-card bg-zinc-900 rounded-3xl overflow-hidden block">
+                <div class="h-52 bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://substackcdn.com/image/fetch/$s_!U2pf!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2c09db8c-a115-45c1-a5ab-4609a8626666_960x440.jpeg" 
+                         alt="Universal Compact Modeling" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8">
+                    <div class="text-blue-400 text-xs font-mono mb-2">04</div>
+                    <h3 class="text-xl font-semibold mb-3">Universal Compact Modeling for Arbitrary Field-Plate Architectures</h3>
+                    <p class="text-zinc-400 text-sm">A generalized framework for future architectures.</p>
+                </div>
+            </a>
+
+            <!-- 05 Vision for Future Semiconductor Technologies -->
+            <a href="future-vision.html" class="research-card bg-zinc-900 rounded-3xl overflow-hidden block">
+                <div class="h-52 bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://www.nasa.gov/wp-content/uploads/2023/03/51205771942-3869c2d30f-k.jpg?resize=2000,1333" 
+                         alt="Vision for Future Semiconductor Technologies" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8">
+                    <div class="text-blue-400 text-xs font-mono mb-2">05</div>
+                    <h3 class="text-xl font-semibold mb-3">Vision for Future Semiconductor Technologies</h3>
+                    <p class="text-zinc-400 text-sm">Applications in energy, mobility, aerospace, and RF.</p>
+                </div>
+            </a>
         </div>
-    </footer>
+    </div>
 
 </body>
 </html>
