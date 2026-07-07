@@ -63,8 +63,8 @@ The purpose of this portfolio is to:
 For research collaboration or technical discussion in semiconductor device modeling:
 
 * GitHub: SahraEbm
-* Professional inquiries: sahra.ebm@gmail.com
-
+* Professional inquiries: sahraebm@aut.ac.ir
+* LinkedIn: https://www.linkedin.com/in/sahraebm
 ---
 
 ## License
