@@ -1,74 +1,74 @@
-# Sahra Ebrahimmagham — Semiconductor Device Modeling Research Portfolio
+# Sahra Ebrahimmagham — Research Portfolio
 
-## Overview
+**Building the Semiconductor Foundations for Sustainable Artificial Intelligence**
 
-This repository contains the source code for the personal academic and research website of **Sahra Ebrahimmagham**, an electrical engineer specializing in semiconductor device modeling and compact model development for advanced transistor technologies.
+Personal research website and portfolio of **Sahra Ebrahimmagham**, a semiconductor device researcher specializing in Gallium Nitride (GaN) HEMTs, physics-based compact modeling, and energy-efficient hardware for next-generation AI systems.
 
-The website is designed as a professional research portfolio to document and communicate work in wide-bandgap semiconductor devices, with a particular focus on **GaN High Electron Mobility Transistors (HEMTs)** and circuit-compatible compact modeling methodologies.
-
----
-
-## Research Focus
-
-The work presented in this portfolio is centered on the intersection of device physics and circuit simulation, with emphasis on:
-
-* GaN HEMT device modeling and characterization
-* Physics-based compact model development
-* Verilog-A implementation for SPICE-compatible simulation
-* Wide-bandgap semiconductor devices
-* RF and power electronics applications
-* TCAD-to-circuit model translation methodologies
+🌐 **Website:** [https://sahraebm.github.io](https://sahraebm.github.io)
 
 ---
 
-## Featured Project
+## Research Leadership
 
-### GaN HEMT Compact Model (Verilog-A)
+Sahra currently leads two complementary research teams focused on solving the energy-efficiency bottleneck of future artificial intelligence systems.
 
-A key project showcased in this portfolio is the development of a **GaN HEMT compact model implemented in Verilog-A**, designed for use in circuit-level simulation environments.
+### Team 1: Advanced Semiconductor Devices (Power Infrastructure)
+- Next-generation wide-bandgap technologies with a strong focus on **GaN High Electron Mobility Transistors (HEMTs)**
+- Physics-based compact modeling (Verilog-A) of GaN HEMTs with Gate Field-Plate and dual Gate + Source Field-Plate structures
+- High power density, superior conversion efficiency, and thermal performance for AI data centers and high-performance computing
 
-**Repository:**
-https://github.com/SahraEbm/GaN-HEMT-GFP-VerilogA
+### Team 2: Brain-Inspired Computing (Architectural Paradigm)
+- Exploration of event-driven and non-von Neumann computing architectures inspired by biological neural networks
+- Application of neuromorphic principles to overcome the energy limitations of conventional processors
+- Bridging semiconductor device physics with bio-inspired system architectures for sustainable AI hardware
 
-This work focuses on capturing essential device physics of GaN-based transistors while maintaining computational efficiency suitable for integration into standard EDA workflows.
+**Previous Leadership (2021–2024)**  
+Research Team Lead – Next-Generation Wide-Bandgap Transistors  
+Focused on GaN HEMT device physics, field-plate engineering, and physics-based compact modeling for power and high-frequency applications.
+
+---
+
+## Open-Source Contributions
+
+| Project | Description | Repository |
+|---------|-------------|------------|
+| **GaN HEMT with Gate Field-Plate** | Physics-based Verilog-A compact model | [GaN-HEMT-GFP-VerilogA](https://github.com/SahraEbm/GaN-HEMT-GFP-VerilogA) |
+| **GaN HEMT with Gate & Source Field-Plate** | Extended dual field-plate compact model | [GaN-HEMT-GFP-SFP-VerilogA](https://github.com/SahraEbm/GaN-HEMT-GFP-SFP-VerilogA) |
 
 ---
 
 ## Website Structure
 
-The website includes the following sections:
-
-* **Home:** Overview of research identity and focus areas
-* **About:** Professional background and research interests
-* **Research:** Core technical domains and methodologies
-* **Projects:** Summary of ongoing and completed work
-* **GaN HEMT Model:** Detailed project page for compact modeling work
-* **Contact:** Professional communication and collaboration details
+- **Home** — Research identity and featured work
+- **About** — Professional background, leadership roles, and education
+- **Research** — Core technical domains
+- **Projects** — Open-source models and technical contributions
+- **Articles** — In-depth technical articles on GaN HEMTs and SiC MOSFETs
+- **Contact** — Collaboration inquiries
 
 ---
 
-## Purpose
+## Research Interests
 
-The purpose of this portfolio is to:
-
-* Document ongoing research in semiconductor device modeling
-* Provide open and accessible technical explanations of compact modeling approaches
-* Share simulation-based implementations and engineering insights
-* Support collaboration within the semiconductor and microelectronics research community
+- Physics-based compact modeling of advanced power transistors  
+- GaN HEMT device design and field-plate engineering  
+- Energy-efficient power delivery for AI infrastructure  
+- Brain-inspired and non-von Neumann computing architectures  
+- Sustainable hardware pathways for next-generation AI systems  
 
 ---
 
 ## Contact
 
-For research collaboration or technical discussion in semiconductor device modeling:
+For research collaboration or technical discussion:
 
-* GitHub: SahraEbm
-* Professional inquiries: sahraebm@aut.ac.ir
-* LinkedIn: https://www.linkedin.com/in/sahraebm
+- **Email:** [sahraebm@aut.ac.ir](mailto:sahraebm@aut.ac.ir)  
+- **LinkedIn:** [linkedin.com/in/sahraebm](https://www.linkedin.com/in/sahraebm)  
+- **GitHub:** [github.com/SahraEbm](https://github.com/SahraEbm)  
+- **Website:** [sahraebm.github.io](https://sahraebm.github.io)
+
 ---
 
 ## License
 
-This repository is intended for academic and research communication purposes. All original content related to modeling approaches and documentation is attributed to the author unless otherwise stated.
-
----
+This repository is intended for academic and research communication purposes. All original content is attributed to Sahra Ebrahimmagham unless otherwise stated.
