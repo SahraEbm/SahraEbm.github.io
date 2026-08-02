@@ -177,21 +177,45 @@
     </section>
 
     <!-- Featured Project -->
+   <!-- Featured Project -->
     <section id="projects" class="py-24 bg-zinc-950">
         <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="text-blue-400 uppercase text-sm tracking-widest">Featured Projects</span>
+                <h2 class="text-4xl font-semibold mt-3">GaN HEMT Compact Models (Verilog-A)</h2>
+            </div>
+
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="lg:col-span-2 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-700 rounded-3xl p-12">
-                    <span class="text-blue-400 uppercase text-sm tracking-widest">Featured Project</span>
-                    <h2 class="text-4xl font-semibold mt-6 mb-6">GaN HEMT Compact Model (Verilog-A)</h2>
-                    <p class="text-zinc-300 text-lg leading-relaxed">
-                        A physically informed compact model for GaN HEMTs with gate field-plate structures, implemented in Verilog-A.
-                    </p>
-                    <a href="https://github.com/SahraEbm/GaN-HEMT-GFP-VerilogA" target="_blank"
-                       class="mt-10 inline-flex items-center gap-3 bg-white text-zinc-900 px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-100">
-                        View Project on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
+                <!-- Left column: Two models stacked -->
+                <div class="lg:col-span-2 space-y-8">
+
+                    <!-- Model 1: Gate Field-Plate -->
+                    <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-700 rounded-3xl p-10">
+                        <h3 class="text-2xl font-semibold mb-4 text-white">GaN HEMT with Gate Field-Plate</h3>
+                        <p class="text-zinc-300 text-lg leading-relaxed mb-8">
+                            A physically informed compact model for GaN HEMTs with gate field-plate structures, implemented in Verilog-A.
+                        </p>
+                        <a href="https://github.com/SahraEbm/GaN-HEMT-GFP-VerilogA" target="_blank"
+                           class="inline-flex items-center gap-3 bg-white text-zinc-900 px-7 py-3.5 rounded-2xl font-semibold hover:bg-zinc-100 transition">
+                            View Project on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Model 2: Gate + Source Field-Plate -->
+                    <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-700 rounded-3xl p-10">
+                        <h3 class="text-2xl font-semibold mb-4 text-white">GaN HEMT with Gate and Source Field-Plate</h3>
+                        <p class="text-zinc-300 text-lg leading-relaxed mb-8">
+                            An extended physics-based compact model for AlGaN/GaN HEMTs featuring both Gate Field Plate (GFP) and Source Field Plate (SFP), capturing the combined effects for improved high-voltage and high-frequency performance.
+                        </p>
+                        <a href="https://github.com/SahraEbm/GaN-HEMT-GFP-SFP-VerilogA" target="_blank"
+                           class="inline-flex items-center gap-3 bg-white text-zinc-900 px-7 py-3.5 rounded-2xl font-semibold hover:bg-zinc-100 transition">
+                            View Project on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
                 </div>
 
+                <!-- Right column: Recent Updates (unchanged) -->
                 <div class="bg-zinc-900 rounded-3xl p-10">
                     <h3 class="font-semibold text-xl mb-8">Recent Updates</h3>
                     <div class="space-y-8 text-sm">
