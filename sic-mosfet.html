@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Carbide (SiC) MOSFET | Sahra Ebrahimmagham</title>
+    <meta name="description" content="In-depth article on Silicon Carbide (SiC) MOSFETs: material advantages, high-voltage performance, high-temperature operation, and energy efficiency by Sahra Ebrahimmagham.">
+    <meta name="keywords" content="SiC MOSFET, Silicon Carbide, wide-bandgap semiconductor, power electronics, high voltage devices, electric vehicles, Sahra Ebrahimmagham">
+    <meta name="author" content="Sahra Ebrahimmagham">
+    <link rel="canonical" href="https://sahraebm.github.io/sic-mosfet.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- Navigation -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-semibold tracking-tight text-white">Sahra Ebrahimmagham</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="research.html" class="hover:text-blue-400">Research</a>
+                <a href="index.html#projects" class="hover:text-blue-400">Projects</a>
+                <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://linkedin.com/in/sahraebm" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="https://github.com/SahraEbm" target="_blank" class="hover:text-blue-400"><i class="fab fa-github text-2xl"></i></a>
+                <a href="mailto:sahraebm@aut.ac.ir" class="hover:text-blue-400"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="pt-28 pb-20">
+        <article class="max-w-4xl mx-auto px-6">
+
+            <!-- Header -->
+            <header class="mb-12">
+                <a href="index.html#research" class="text-blue-400 text-sm hover:underline mb-6 inline-block">← Back to Research</a>
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                    Silicon Carbide (SiC) MOSFET: Superior High-Voltage and High-Temperature Performance in Power Electronics
+                </h1>
+                <p class="text-zinc-400">By Sahra Ebrahimmagham</p>
+            </header>
+
+            <!-- Content -->
+            <div class="text-zinc-300 leading-relaxed text-lg space-y-6">
+
+                <h2 class="text-2xl font-semibold text-white mt-10">1. Introduction</h2>
+                <p>
+                    The rapid electrification of transportation, expansion of renewable energy infrastructure, and increasing energy demands of modern computing systems have created a critical need for advanced power semiconductor technologies capable of operating with higher efficiency, voltage, and temperature tolerance. Conventional silicon (Si)-based power devices, including silicon IGBTs and MOSFETs, have dominated power electronics for decades; however, their performance is increasingly limited by fundamental material constraints such as low critical electric field, restricted thermal capability, and switching losses at high frequencies.
+                </p>
+                <p>
+                    Wide-bandgap (WBG) semiconductor materials, particularly silicon carbide (SiC), have emerged as a transformative solution for next-generation power electronics. Among SiC-based devices, the silicon carbide metal–oxide–semiconductor field-effect transistor (SiC MOSFET) has attracted significant attention due to its superior breakdown capability, low conduction losses, fast switching performance, and high-temperature reliability. These properties enable SiC MOSFETs to outperform conventional silicon devices in demanding applications including electric vehicles, renewable energy systems, aerospace electronics, industrial motor drives, and high-voltage power conversion.
+                </p>
+                <p>
+                    The fundamental advantage of SiC originates from its exceptional material properties. Compared with silicon, 4H-SiC exhibits a wider bandgap (~3.26 eV), a higher critical electric field (~3 MV/cm), higher thermal conductivity (~4.9 W/cm·K), and higher saturation velocity. These characteristics allow SiC devices to support significantly higher blocking voltages while maintaining thinner drift regions and lower resistance. As a result, SiC MOSFETs provide a pathway toward smaller, lighter, and more efficient power electronic systems.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">2. Material Advantages of Silicon Carbide for Power Electronics</h2>
+                <p>
+                    The performance limitations of silicon power devices are primarily associated with the physical properties of the semiconductor material. The breakdown voltage of a conventional silicon device is constrained by its relatively low critical electric field, requiring a thick and lightly doped drift region to sustain high voltages. However, increasing the drift region thickness inevitably increases the device resistance, creating a fundamental trade-off between voltage capability and conduction losses.
+                </p>
+                <p>
+                    Silicon carbide significantly improves this relationship because its critical electric field is approximately ten times higher than that of silicon. This allows SiC devices to achieve high breakdown voltages using much thinner drift layers. The reduced drift thickness directly decreases the specific on-resistance, enabling high-voltage devices with substantially lower conduction losses.
+                </p>
+                <p>
+                    Another important advantage of SiC is its excellent thermal performance. The high thermal conductivity of SiC enables more efficient heat dissipation compared with silicon, allowing devices to operate at elevated temperatures while maintaining reliability. This characteristic is particularly important in applications such as electric vehicles and aerospace systems, where cooling limitations significantly affect system size, weight, and efficiency.
+                </p>
+                <p>
+                    Furthermore, SiC has a high saturation electron velocity, enabling faster switching operation. Higher switching frequencies reduce the size of passive components, such as inductors and transformers, allowing the development of compact and lightweight power converters.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">3. Structure and Operating Principle of SiC MOSFETs</h2>
+                <p>
+                    A typical SiC MOSFET consists of a vertical device structure containing a source electrode, gate oxide, p-body region, n-type drift layer, and drain electrode. Unlike traditional silicon MOSFETs used mainly at low and medium voltages, SiC MOSFETs are designed primarily for high-voltage applications through vertical current flow.
+                </p>
+                <p>
+                    During operation, applying a positive voltage to the gate electrode creates an inversion channel at the SiC/SiO₂ interface, allowing electrons to flow from the source through the channel and drift region toward the drain. When the gate voltage is removed, the channel disappears, blocking current flow and allowing the device to withstand high drain voltages.
+                </p>
+                <p>
+                    The vertical structure enables SiC MOSFETs to achieve voltage ratings ranging from hundreds of volts to several kilovolts. Commercial SiC MOSFETs are available for applications such as 650 V, 1200 V, 1700 V, and beyond, making them suitable for a wide range of power conversion systems.
+                </p>
+                <p>
+                    Compared with silicon IGBTs, SiC MOSFETs offer the important advantage of majority-carrier operation. Because conduction does not rely on minority carrier injection, SiC MOSFETs avoid the long carrier lifetime effects responsible for IGBT switching losses. This enables significantly faster turn-on and turn-off operation.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">4. High-Voltage Performance and Breakdown Capability</h2>
+                <p>
+                    One of the most important advantages of SiC MOSFET technology is its ability to withstand high electric fields while maintaining low conduction resistance. This property makes SiC particularly attractive for medium- and high-voltage applications.
+                </p>
+                <p>
+                    In a power semiconductor device, the drift region is responsible for supporting the blocking voltage during the off-state. For silicon devices, increasing breakdown voltage requires increasing drift region thickness, which leads to higher resistance. SiC reduces this limitation because its higher critical electric field allows thinner drift layers.
+                </p>
+                <p>
+                    The resulting improvement in the relationship between breakdown voltage and on-resistance is one of the main reasons SiC MOSFETs outperform silicon devices. This advantage becomes especially important in high-voltage applications such as:
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li>Electric vehicle traction inverters</li>
+                    <li>Solar photovoltaic converters</li>
+                    <li>Wind energy conversion systems</li>
+                    <li>Grid-connected power electronics</li>
+                    <li>High-voltage DC transmission systems</li>
+                </ul>
+                <p>
+                    In these systems, reducing conduction losses directly improves energy efficiency and decreases thermal management requirements.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">5. High-Temperature Operation and Reliability</h2>
+                <p>
+                    Modern power electronic systems increasingly demand operation under harsh environmental conditions. Conventional silicon devices experience significant degradation at high temperatures because increased carrier concentration and reduced mobility negatively affect electrical performance.
+                </p>
+                <p>
+                    SiC MOSFETs provide superior high-temperature capability due to their wide bandgap and strong chemical bonding. The intrinsic carrier concentration of SiC remains extremely low even at elevated temperatures, allowing stable electrical operation beyond the temperature limits of silicon devices.
+                </p>
+                <p>
+                    This capability enables SiC-based systems to operate with reduced cooling requirements, improving system reliability and reducing overall weight and cost. For example, in electric vehicles, SiC MOSFETs enable higher inverter efficiency and allow operation at higher junction temperatures, contributing to increased driving range and improved thermal management.
+                </p>
+                <p>
+                    However, high-temperature reliability also depends on the stability of the gate oxide interface. The SiC/SiO₂ interface contains defects that can reduce channel mobility and affect threshold voltage stability. Significant research efforts are focused on improving oxide quality, interface passivation, and fabrication processes to enhance long-term reliability.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">6. Switching Performance and Energy Efficiency</h2>
+                <p>
+                    A major advantage of SiC MOSFETs is their ability to operate at high switching frequencies with reduced energy losses. Switching losses are a major contributor to power dissipation in electronic converters, particularly as switching frequency increases.
+                </p>
+                <p>
+                    Because SiC MOSFETs have low capacitances, fast carrier transport, and no minority carrier storage effects, they achieve significantly faster switching compared with silicon IGBTs. This enables higher-frequency operation, allowing engineers to reduce the size of magnetic components and improve system power density.
+                </p>
+                <p>Applications benefiting from these characteristics include:</p>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li>Fast electric vehicle chargers</li>
+                    <li>Data center power supplies</li>
+                    <li>Aerospace power systems</li>
+                    <li>Energy storage converters</li>
+                    <li>Industrial automation systems</li>
+                </ul>
+                <p>
+                    The combination of high efficiency and compact design makes SiC MOSFETs a critical technology for reducing global energy consumption associated with electrification and digital infrastructure.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">7. Challenges and Future Development</h2>
+                <p>
+                    Despite their advantages, SiC MOSFETs still face several technological challenges. Manufacturing high-quality SiC wafers remains more difficult and expensive than silicon production due to crystal growth challenges and defect control requirements.
+                </p>
+                <p>
+                    Another important challenge is the reliability of the gate oxide. Interface traps at the SiC/SiO₂ boundary can reduce channel mobility and introduce threshold voltage instability. Researchers are investigating alternative dielectric materials, improved oxidation processes, and advanced device architectures to overcome these limitations.
+                </p>
+                <p>
+                    Short-circuit capability is another critical reliability concern. Due to their low conduction resistance and high current density, SiC MOSFETs must be carefully designed to withstand abnormal operating conditions.
+                </p>
+                <p>Future developments are expected to include:</p>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li>Improved SiC crystal quality and wafer scaling</li>
+                    <li>Advanced trench MOSFET architectures</li>
+                    <li>Integrated SiC power modules</li>
+                    <li>Higher voltage SiC devices</li>
+                    <li>AI-assisted optimization of semiconductor manufacturing processes</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-white mt-10">8. Conclusion</h2>
+                <p>
+                    Silicon carbide MOSFETs represent a fundamental advancement in power semiconductor technology, providing superior high-voltage capability, high-temperature operation, and high-frequency switching performance compared with conventional silicon devices. Their exceptional material properties enable more efficient and compact power conversion systems across transportation, renewable energy, industrial automation, and advanced computing infrastructure.
+                </p>
+                <p>
+                    As global electricity consumption continues to rise and sustainable energy systems become increasingly important, SiC MOSFETs will play a central role in improving energy efficiency and reducing power losses. Together with other wide-bandgap technologies such as GaN HEMTs, SiC MOSFETs form the foundation of next-generation semiconductor solutions for a more efficient and electrified world.
+                </p>
+
+                <p class="mt-12 text-zinc-500 text-base">
+                    <strong>Keywords:</strong> Silicon Carbide, SiC MOSFET, Wide-Bandgap Semiconductor, Power Electronics, High Voltage Devices, Electric Vehicles, Renewable Energy, High-Temperature Electronics, Energy Efficiency.
+                </p>
+            </div>
+
+            <!-- Back link -->
+            <div class="mt-16 pt-8 border-t border-zinc-800">
+                <a href="index.html#research" class="inline-flex items-center gap-2 text-blue-400 hover:underline">
+                    ← Back to The Next Generation of Transistors
+                </a>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            © 2026 Sahra Ebrahimmagham • Semiconductor Device Engineering & Modeling
+        </div>
+    </footer>
+
+</body>
+</html>
