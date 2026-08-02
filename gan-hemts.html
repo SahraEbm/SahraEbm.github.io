@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallium Nitride (GaN) HEMTs | Sahra Ebrahimmagham</title>
+    <meta name="description" content="In-depth article on Gallium Nitride (GaN) High-Electron-Mobility Transistors: physical principles, high-frequency performance, power switching applications, and future outlook by Sahra Ebrahimmagham.">
+    <meta name="keywords" content="GaN HEMT, Gallium Nitride, AlGaN/GaN, wide-bandgap semiconductors, field plate, power electronics, RF amplifiers, Sahra Ebrahimmagham">
+    <meta name="author" content="Sahra Ebrahimmagham">
+    <link rel="canonical" href="https://sahraebm.github.io/gan-hemt.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+        .prose p { margin-bottom: 1.25rem; }
+        .prose ul { margin-bottom: 1.25rem; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- Navigation -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-semibold tracking-tight text-white">Sahra Ebrahimmagham</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="research.html" class="hover:text-blue-400">Research</a>
+                <a href="index.html#projects" class="hover:text-blue-400">Projects</a>
+                <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://linkedin.com/in/sahraebm" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="https://github.com/SahraEbm" target="_blank" class="hover:text-blue-400"><i class="fab fa-github text-2xl"></i></a>
+                <a href="mailto:sahraebm@aut.ac.ir" class="hover:text-blue-400"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="pt-28 pb-20">
+        <article class="max-w-4xl mx-auto px-6">
+
+            <!-- Header -->
+            <header class="mb-12">
+                <a href="index.html#research" class="text-blue-400 text-sm hover:underline mb-6 inline-block">← Back to Research</a>
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                    Gallium Nitride (GaN) High-Electron-Mobility Transistors: Enabling High-Frequency and High-Power Applications
+                </h1>
+                <p class="text-zinc-400">By Sahra Ebrahimmagham</p>
+            </header>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none text-zinc-300 leading-relaxed text-lg">
+
+                <h2 class="text-2xl font-semibold text-white">1. Introduction</h2>
+                <p>
+                    The continuous growth of modern electronic systems, including 5G/6G communication networks, electric vehicles, renewable energy systems, radar technologies, and artificial intelligence (AI) data centers, has created an increasing demand for semiconductor devices capable of operating at higher frequencies, voltages, and power densities while maintaining superior energy efficiency. Conventional silicon (Si)-based transistors, despite decades of optimization through CMOS scaling, are approaching fundamental physical limitations associated with breakdown voltage, thermal management, and switching losses. Wide-bandgap (WBG) semiconductor materials, particularly gallium nitride (GaN), have emerged as a transformative technology platform for next-generation high-power and high-frequency electronics.
+                </p>
+                <p>
+                    Among GaN-based devices, the AlGaN/GaN high-electron-mobility transistor (HEMT) represents one of the most promising semiconductor technologies due to its exceptional electron transport properties, high breakdown capability, and outstanding high-frequency performance. GaN HEMTs have become key enablers for applications ranging from high-efficiency power conversion and RF communication systems to advanced aerospace and defense electronics.
+                </p>
+                <p>
+                    The fundamental advantage of GaN technology originates from the unique physical properties of the GaN material system. Compared with silicon, GaN possesses a significantly larger bandgap (~3.4 eV), higher critical electric field, higher electron saturation velocity, and superior thermal stability. These characteristics allow GaN devices to sustain higher operating voltages, switch faster, and achieve lower power losses compared with conventional Si and even silicon carbide (SiC) technologies in specific applications.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white">2. Physical Principles of AlGaN/GaN HEMTs</h2>
+                <p>
+                    The operating principle of a GaN HEMT relies on the formation of a high-density two-dimensional electron gas (2DEG) at the AlGaN/GaN heterointerface. Unlike conventional MOSFETs, where carriers are generated through intentional doping, the GaN HEMT utilizes polarization-induced charges resulting from spontaneous and piezoelectric polarization effects.
+                </p>
+                <p>
+                    When a thin AlGaN barrier layer is grown on a GaN buffer layer, polarization discontinuity at the heterointerface generates a strong electric field that attracts electrons, forming a highly conductive 2DEG channel. Because these electrons are spatially separated from ionized dopants, impurity scattering is significantly reduced, resulting in extremely high carrier mobility and conductivity.
+                </p>
+                <p>
+                    The high mobility and sheet carrier density of the 2DEG provide GaN HEMTs with excellent current handling capability and high transconductance. Typical GaN HEMTs can achieve electron mobilities above 1500 cm²/V·s and sustain high current densities, making them highly attractive for both microwave and power electronics applications.
+                </p>
+                <p>
+                    However, the same polarization effects responsible for creating the 2DEG also introduce challenges in device design. Issues such as normally-on operation, current collapse, trapping effects, and electric-field concentration near the gate edge require advanced engineering solutions, including gate recess structures, field plates, surface passivation, and optimized buffer layers.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white">3. High-Frequency Performance of GaN HEMTs</h2>
+                <p>
+                    The exceptional electron transport properties of GaN enable HEMTs to operate at frequencies far beyond conventional silicon devices. The high electron saturation velocity and low parasitic capacitances allow GaN transistors to achieve high cutoff frequencies (f<sub>T</sub>) and maximum oscillation frequencies (f<sub>max</sub>), making them ideal candidates for microwave and millimeter-wave applications.
+                </p>
+                <p>
+                    GaN HEMTs are widely used in radio-frequency power amplifiers for 5G base stations, satellite communication systems, phased-array radar, and electronic warfare platforms. Their ability to simultaneously provide high output power and high efficiency provides a significant advantage over traditional GaAs and silicon-based RF technologies.
+                </p>
+                <p>
+                    For RF applications, device performance is strongly influenced by parasitic resistances, gate capacitances, thermal effects, and charge trapping phenomena. Therefore, accurate compact models that capture nonlinear electrical behavior, self-heating effects, and dynamic trapping mechanisms are essential for circuit-level design and system optimization.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white">4. High-Power Switching Applications</h2>
+                <p>
+                    Beyond RF electronics, GaN HEMTs have become a critical technology for high-efficiency power conversion systems. The high breakdown electric field of GaN enables devices with thinner drift regions and lower on-resistance compared with silicon-based power transistors.
+                </p>
+                <p>
+                    In power switching applications, reducing conduction and switching losses is essential for improving system efficiency. GaN HEMTs demonstrate extremely low switching losses due to their high electron velocity and low output capacitance, enabling operation at MHz switching frequencies. This capability allows the development of smaller, lighter, and more efficient power converters.
+                </p>
+                <p>Applications include:</p>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li>Data center power supplies</li>
+                    <li>Electric vehicle charging systems</li>
+                    <li>Renewable energy converters</li>
+                    <li>Aerospace power electronics</li>
+                    <li>Consumer fast chargers</li>
+                    <li>Solid-state transformers</li>
+                </ul>
+                <p>
+                    The importance of GaN power electronics is becoming increasingly significant as global energy consumption from digital infrastructure continues to grow. Modern AI data centers, for example, require highly efficient power delivery networks capable of supporting enormous computational workloads. GaN-based power devices can reduce energy losses in power conversion stages, contributing to more sustainable artificial intelligence infrastructure.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white">5. Device Engineering Challenges and Advanced Solutions</h2>
+                <p>
+                    Despite the remarkable advantages of GaN HEMTs, several challenges must be addressed before achieving their full potential. One of the most important limitations is electric-field management. The high electric fields required for high-voltage operation can lead to premature breakdown, especially near the gate edge where field crowding occurs.
+                </p>
+                <p>
+                    Field plate technologies have been developed to redistribute the electric field and enhance breakdown performance. Gate field plates (GFPs) and source field plates (SFPs) reduce peak electric fields, improve device reliability, and increase the breakdown voltage. However, these structures introduce additional parasitic capacitances, requiring careful optimization between power performance and high-frequency operation.
+                </p>
+                <p>
+                    Another major challenge is current collapse, caused by trapping of electrons at surface states and defects within the semiconductor structure. These trapped charges modify the channel conductivity and reduce dynamic performance. Advanced surface treatments, passivation layers, and physics-based compact models are required to accurately understand and mitigate these effects.
+                </p>
+                <p>
+                    Thermal management is also critical because GaN HEMTs often operate at extremely high power densities. Although GaN has better thermal properties than many semiconductor materials, self-heating effects can significantly influence mobility, threshold voltage, and reliability. Accurate electrothermal modeling is therefore essential for predicting device behavior under realistic operating conditions.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white">6. Future Outlook</h2>
+                <p>
+                    GaN HEMTs represent a cornerstone technology for the transition toward more efficient and powerful electronic systems. Their unique combination of high breakdown voltage, fast switching capability, and high-frequency operation enables applications that are difficult or impossible to achieve using conventional silicon technology.
+                </p>
+                <p>
+                    Future developments in GaN technology will focus on advanced device architectures, improved reliability, monolithic integration, and intelligent modeling approaches. Emerging concepts such as vertical GaN devices, GaN-on-Si platforms, heterogeneous integration, and AI-assisted semiconductor optimization are expected to further expand the impact of GaN electronics.
+                </p>
+                <p>
+                    As artificial intelligence, communication networks, and electrification continue to accelerate, semiconductor technologies capable of reducing energy consumption will become increasingly strategic. GaN HEMTs provide a pathway toward efficient power delivery, high-performance RF systems, and sustainable electronic infrastructure, making them one of the most important semiconductor technologies for the next generation of energy-efficient computing and communication systems.
+                </p>
+
+                <p class="mt-12 text-zinc-500 text-base">
+                    <strong>Keywords:</strong> Gallium Nitride, GaN HEMT, AlGaN/GaN heterostructure, two-dimensional electron gas, wide-bandgap semiconductors, RF power amplifiers, power electronics, field plate technology, energy-efficient electronics.
+                </p>
+            </div>
+
+            <!-- Back link -->
+            <div class="mt-16 pt-8 border-t border-zinc-800">
+                <a href="index.html#research" class="inline-flex items-center gap-2 text-blue-400 hover:underline">
+                    ← Back to The Next Generation of Transistors
+                </a>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            © 2026 Sahra Ebrahimmagham • Semiconductor Device Engineering & Modeling
+        </div>
+    </footer>
+
+</body>
+</html>
