@@ -10,7 +10,7 @@ Personal research website and portfolio of **Sahra Ebrahimmagham**, a semiconduc
 
 ## Research Leadership
 
-Sahra currently leads two complementary research teams focused on solving the energy-efficiency bottleneck of future artificial intelligence systems.
+Sahra currently leads two research teams focused on solving the energy-efficiency bottleneck of future artificial intelligence systems.
 
 ### Team 1: Advanced Semiconductor Devices (Power Infrastructure)
 - Next-generation wide-bandgap technologies with a strong focus on **GaN High Electron Mobility Transistors (HEMTs)**
